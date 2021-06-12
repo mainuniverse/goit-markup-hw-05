@@ -600,6 +600,7 @@ li.social-icons-list:first-child {
   opacity: 0;
   color: var(--white-color);
   background-color: var(--secondary-background-color);
+  overflow: scroll;
 }
 .project-overlay:hover .project-info {
   transform: translateY(0);
