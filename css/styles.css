@@ -141,7 +141,7 @@ p {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-  margin-top: 31px;
+  bottom: -3px;
 }
 
 .link:hover,
@@ -213,8 +213,7 @@ p {
   text-decoration: none;
   margin: 0;
   border-radius: 4px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 200px 15px;
   max-width: 1600px;
   display: inline-block;
   align-items: center;
@@ -225,7 +224,6 @@ p {
   line-height: 1.364;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 200px;
   margin-bottom: 30px;
 }
 
@@ -271,7 +269,7 @@ p {
 .hero-details {
   font-size: 14px;
   line-height: 1.5;
-  padding-top: 10px;
+
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
@@ -478,7 +476,6 @@ li.social-icons-list:first-child {
   outline: none;
   border: none;
   border-radius: 4px;
-  margin-bottom: 200px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-primary:hover,
@@ -532,16 +529,6 @@ li.social-icons-list:first-child {
   background-color: var(--white-color);
 }
 
-/* .modal-content {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px 0px #00000033;
-  box-shadow: 0px 1px 1px 0px #00000024;
-  box-shadow: 0px 1px 3px 0px #0000001f;
-} */
 .icons-close {
   position: absolute;
   box-sizing: border-box;
@@ -585,14 +572,11 @@ li.social-icons-list:first-child {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: auto;
   transform: translateY(100%);
   display: flex;
   align-items: center;
-  padding: 63px 24px;
+  padding: 66px 24px;
   font-size: 18px;
-  font-weight: 400;
   line-height: 1.55;
   letter-spacing: 0.03em;
   text-align: left;
@@ -602,22 +586,10 @@ li.social-icons-list:first-child {
   background-color: var(--secondary-background-color);
   overflow: scroll;
 }
-.project-overlay:hover .project-info {
+.projects:hover .project-info {
   transform: translateY(0);
   opacity: 1;
 }
-/* 2 option  .project-info {
-  position: absolute;
-  bottom: -100%;
-  left: 0;
-  width: 100%;
-...
-}
-.project-overlay:hover .project-info {
-  transform: translateY(-100%);
-  opacity: 1;
-} */
-
 .projects:nth-child(3n) {
   margin-right: 0;
 }
