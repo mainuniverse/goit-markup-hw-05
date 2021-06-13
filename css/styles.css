@@ -518,15 +518,17 @@ li.social-icons-list:first-child {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
   background-color: var(--white-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-close {
@@ -541,6 +543,9 @@ li.social-icons-list:first-child {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
 }
 /* Portfolio */
 .projects-container {
